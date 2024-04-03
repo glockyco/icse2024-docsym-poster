@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" modified="2024-04-03T06:41:22.166Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="sut4QFL6sUKemMOGQHBI" version="21.6.2" type="device">
+  <diagram name="Page-1" id="4ljGypkEhpYdOn-WtiDq">
+    <mxGraphModel dx="524" dy="453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8ufJQJUWpIlTpqP8Fki5-1" value="1&lt;br&gt;2&lt;br&gt;3&lt;br&gt;4&lt;br&gt;5&lt;br&gt;6&lt;br&gt;7" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Inconsolata;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInconsolata;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="30" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8ufJQJUWpIlTpqP8Fki5-2" value="int abs(int x) {&lt;br&gt;&amp;nbsp; if (x &lt;span style=&quot;background-color: rgb(0, 249, 0);&quot;&gt;&amp;gt;=&lt;/span&gt; 0) {&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; return x;&lt;br&gt;&amp;nbsp; } else {&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; return -x;&lt;br&gt;&amp;nbsp; }&lt;br&gt;}" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Inconsolata;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInconsolata;align=left;spacingLeft=5;spacingRight=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="260" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8ufJQJUWpIlTpqP8Fki5-3" value="int abs(int x) {&lt;br&gt;&amp;nbsp; if (x &lt;span style=&quot;background-color: rgb(0, 249, 0);&quot;&gt;==&lt;/span&gt; 0) {&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; return x;&lt;br&gt;&amp;nbsp; } else {&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; return -x;&lt;br&gt;&amp;nbsp; }&lt;br&gt;}" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Inconsolata;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInconsolata;align=left;spacingLeft=5;spacingRight=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8ufJQJUWpIlTpqP8Fki5-12" value="Output: NOT EQUIVALENT because the formula below is satisfiable.&lt;br&gt; ((x &amp;gt;= 0 &amp;amp;&amp;amp; abs == x) || ... ) != ((x == 0 &amp;amp;&amp;amp; abs == x) || ... )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Inconsolata;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DInconsolata;spacingTop=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="370" width="390" height="35" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
