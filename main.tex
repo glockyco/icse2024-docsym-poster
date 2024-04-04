@@ -24,7 +24,19 @@
 
 \documentclass[final,hyperref={pdfpagelabels=false}]{beamer}
 
-\usepackage[orientation=portrait,size=a0,scale=1.5]{beamerposter} % Use the beamerposter package for laying out the poster with a portrait orientation and an a0 paper size
+% \usepackage[size=a1,scale=1.5,orientation=portrait]{beamerposter} % Use the beamerposter package for laying out the poster with a portrait orientation and an a0 paper size
+\usepackage[size=custom,width=61.4,height=86.1,scale=1.054,orientation=portrait]{beamerposter} % Use the beamerposter package for laying out the poster with a portrait orientation and an a0 paper size
+
+% \usepackage[
+%   % set width and height to a4 width and height + 6mm
+%   width=59.4truecm, height=84.1truecm,
+%   % use any combination of these options to add different cut markings
+%   cam, axes, frame, cross,
+%   % set the type of TeX renderer you use
+%   pdftex,
+%   % center the contents
+%   center
+% ]{crop}
 
 \usetheme{Oxford}
 
@@ -53,7 +65,7 @@
 %   TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
-\title{\fontsize{64}{64}\selectfont{}Aiding Developer Understanding of Software Changes\\[18pt]via Symbolic Execution-based Semantic Differencing} % Poster title
+\title{\fontsize{45}{45}\selectfont{}Aiding Developer Understanding of Software Changes\\[18pt]via Symbolic Execution-based Semantic Differencing} % Poster title
 \author{Johann Glock (\texttt{johann.glock@aau.at})}
 \institute{Software Engineering Research Group, University of Klagenfurt}
 
@@ -66,15 +78,15 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-\addtobeamertemplate{block end}{}{\vspace*{.5ex}} % White space under blocks
+\addtobeamertemplate{block end}{}{\vspace*{.8ex}} % White space under blocks
 
 \begin{frame}[t] % The whole poster is enclosed in one beamer frame
 
 \begin{columns}[t] % The whole poster consists of two major columns, each of which can be subdivided further with another \begin{columns} block - the [t] argument aligns each column's content to the top
 
-  \begin{column}{.025\textwidth}\end{column} % Empty spacer column
+  \begin{column}{.04\textwidth}\end{column} % Empty spacer column
 
-  \begin{column}{.47\textwidth} % The first column
+  \begin{column}{.45\textwidth} % The first column
     \vspace{\shrink}
     \begin{block}{Motivation}
       While the accuracy and runtime performance of equivalence checking approaches have seen continuous improvements throughout the years, little attention has been paid to the way in which equivalence checking results are presented to developers.
@@ -83,9 +95,9 @@
       \begin{center}
         \includegraphics[width=\columnwidth]{code-example.drawio}
       \end{center}
-      \vspace{-20pt}
+      \vspace{-7.5pt}
 
-      We hypothesize that developers' understanding of program changes and trust of corresponding tool outputs can be improved if these outputs are enriched with better visualizations and result explanations.
+      We hypothesize that developers' understanding of program changes and trust of corresponding tool outputs can be improved if the outputs are enriched with better visualizations and result explanations.
     \end{block}
 
     \begin{block}{Research Goal}
@@ -121,7 +133,7 @@
 
   \begin{column}{.02\textwidth}\end{column} % Empty spacer column
    
-  \begin{column}{.47\textwidth} % The second column
+  \begin{column}{.45\textwidth} % The second column
     \vspace{\shrink}
     \begin{block}{Expected Contributions}
       \begin{itemize}
@@ -129,7 +141,7 @@
         \item[\textbf{C2}] An open source \textbf{prototype} that implements the computation of the raw semantic differencing data as a Java application.
         \item[\textbf{C3}] An open source \textbf{prototype} that implements the processing and visualization of the semantic differencing data as an IDE plugin.
         \item[\textbf{C4}] \textbf{Benchmarking results} that compare the equivalence checking accuracy and runtime requirements of our approach to state-of-the-art equivalence checking approaches.
-        \item[\textbf{C5}] \textbf{Experimental results} that compare how quickly and accurately developers are able to complete change understanding tasks when using our IDE plugin prototype vs.\ state-of-the-art tools.
+        \item[\textbf{C5}] \textbf{Experimental results} that compare how quickly and accurately developers can complete change understanding tasks with our IDE plugin prototype vs.\ state-of-the-art tools.
         \item[\textbf{C6}] \textbf{Developer feedback} that compares the perceived usefulness of our IDE plugin prototype to state-of-the-art tools.
       \end{itemize}
     \end{block}
@@ -137,11 +149,11 @@
     \begin{block}{Preliminary Results}
       For WP1 and WP2, we developed an equivalence checking / semantic differencing tool called PASDA \cite{glock2024pasda} and compared it to the three existing tools ARDiff \cite{badihi2020ardiff}, DSE \cite{person2008dse}, and PRV \cite{boehme2013prv} using the ARDiff benchmark.  PASDA \textbf{correctly classifies} 104 of 141 (\textbf{74\%}) cases, i.e., 9--51 more cases than the three existing tools.
 
-      \vspace{-6pt}
+      \vspace{-4pt}
       \begin{center}
         \includegraphics[width=\columnwidth]{classification-accuracy}
       \end{center}
-      \vspace{-24pt}
+      \vspace{-19.1pt}
 
       In addition, for each input partition that PASDA identifies, it aims to provide (i) a \textbf{partition-level non-/equivalence proof}, (ii) concrete and symbolic input and output values, and (iii) the lines of code that are covered by the corresponding execution path. For the two versions of the \texttt{abs} function shown before, PASDA reports:
 
@@ -169,7 +181,7 @@
     \end{block}
   \end{column} % End of the second column
 
-  \begin{column}{.02\textwidth}\end{column} % Empty spacer column
+  \begin{column}{.04\textwidth}\end{column} % Empty spacer column
 
 \end{columns} % End of all the columns in the poster
 
