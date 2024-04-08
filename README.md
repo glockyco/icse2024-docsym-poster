@@ -4,4 +4,7 @@ Poster for the ICSE 2024 Doctoral Symposium paper:
 The LaTeX sources for the paper itself can be found here:  
 [ICSE 2024 Doctoral Symposium Paper](https://github.com/glockyco/icse2024-docsym-paper)
 
+For the PDF version of the poster see:  
+[main.pdf](main.pdf)
+
 ![ICSE2024 DocSym Poster](main.png)
