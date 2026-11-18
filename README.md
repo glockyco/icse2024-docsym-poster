@@ -1,6 +1,6 @@
 # Poster: Aiding Developer Understanding of Software Changes via Symbolic Execution-based Semantic Differencing
 
-LaTeX sources of the poster that Johann Glock presented at the ICSE 2024 Doctoral Symposium in Lisbon. The poster, the slides of the talk and the paper are on [glockyco.com](https://glockyco.com/talks/2024-04-16-icse-doctoral-symposium/).
+LaTeX sources of the poster that Johann Glock presented at the ICSE 2024 Doctoral Symposium in Lisbon. The poster, the paper and the slides of the talk are on [glockyco.com](https://glockyco.com/research/icse-2024-doctoral-symposium/).
 
 [main.pdf](main.pdf) is the built poster.
 
